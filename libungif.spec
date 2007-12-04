@@ -18,7 +18,7 @@ Source1: 	%{name}-3.1.0.tar.bz2
 # see http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=384773
 Patch0:		http://users.own-hero.net/~decoder/fuzzyocr/giftext-segfault.patch
 Group: 		System/Libraries
-BuildRequires: 	XFree86-devel netpbm-devel
+BuildRequires: 	X11-devel netpbm-devel
 Buildroot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 # The following libgif.so handles packages built against the
 # previous broken giflib package
