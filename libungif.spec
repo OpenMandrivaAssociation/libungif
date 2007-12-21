@@ -19,6 +19,7 @@ Source1: 	%{name}-3.1.0.tar.bz2
 Patch0:		http://users.own-hero.net/~decoder/fuzzyocr/giftext-segfault.patch
 Group: 		System/Libraries
 BuildRequires: 	X11-devel netpbm-devel
+Buildroot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 # The following libgif.so handles packages built against the
 # previous broken giflib package
 Provides: 	libgif.so.4 libgif.so.3 libgif.so libungif.so giflib
