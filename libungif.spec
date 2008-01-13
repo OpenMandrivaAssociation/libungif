@@ -1,7 +1,7 @@
 %define name 	libungif
 %define fakename ungif
 %define version	4.1.4
-%define release	%mkrel 3
+%define release	%mkrel 4
 %define majver 	4
 %define major 	4
 %define libname %mklibname %{fakename} %{major}
