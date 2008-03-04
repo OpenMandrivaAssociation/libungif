@@ -1,7 +1,6 @@
 %define name 	libungif
 %define fakename ungif
 %define version	4.1.4
-%define release	%mkrel 4
 %define majver 	4
 %define major 	4
 %define libname %mklibname %{fakename} %{major}
@@ -9,7 +8,7 @@
 Name: 		%{name}
 Summary: 	A library for manipulating GIF format image files
 Version: 	%{version}
-Release: 	%{release}
+Release: 	%mkrel 5
 License: 	MIT
 URL: 		http://sourceforge.net/projects/libungif/
 Source0: 	%{name}-%{version}.tar.bz2
