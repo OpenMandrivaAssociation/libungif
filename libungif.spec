@@ -8,7 +8,7 @@
 Name: 		%{name}
 Summary: 	A library for manipulating GIF format image files
 Version: 	%{version}
-Release: 	%mkrel 6
+Release: 	%mkrel 7
 License: 	MIT
 URL: 		http://sourceforge.net/projects/libungif/
 Source0: 	%{name}-%{version}.tar.bz2
@@ -16,9 +16,10 @@ Source1: 	%{name}-3.1.0.tar.bz2
 # from https://secure.renaissoft.com/maia/wiki/FuzzyOCR23
 # see http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=384773
 Patch0:		http://users.own-hero.net/~decoder/fuzzyocr/giftext-segfault.patch
+Patch1:		libungif-4.1.4-format_not_a_string_literal_and_no_format_arguments.diff
 Group: 		System/Libraries
 BuildRequires: 	X11-devel netpbm-devel
-Buildroot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 # The following libgif.so handles packages built against the
 # previous broken giflib package
 Provides: 	libgif.so.4 libgif.so.3 libgif.so libungif.so giflib
@@ -96,10 +97,14 @@ Install this package if you need to manipulate GIF format image files.
 You'll also need to install the libungif package.
 
 %prep
-%setup -q -a 1 -n %{name}-%{version}
+
+%setup -q -n %{name}-%{version} -a1
+
 pushd util
 %patch0 -p0 -b .giftext
 popd
+
+%patch1 -p1 -b .format_not_a_string_literal_and_no_format_arguments
 
 %build
 %configure2_5x
