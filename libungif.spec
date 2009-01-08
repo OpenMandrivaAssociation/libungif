@@ -29,8 +29,11 @@ Obsoletes: 	giflib
 The libungif package contains a shared library of functions for loading
 and saving GIF format image files.  The libungif library can load any
 GIF file, but it will save GIFs only in uncompressed format (i.e., it
-won't use the patented LZW compression used to save "normal" compressed
-GIF files).
+won't use the LZW compression used to save "normal" compressed GIF
+files.  The reason for this was that the LZW compression was patented
+in the past, but it fell in the public domain in 2004.  So now you can
+use the libgif which does use this algorithm without any patent issue
+in any country).
 
 Install the libungif package if you need to manipulate GIF files.  You
 should also install the libungif-progs package.
