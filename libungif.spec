@@ -8,7 +8,7 @@
 Name: 		%{name}
 Summary: 	A library for manipulating GIF format image files
 Version: 	%{version}
-Release: 	%mkrel 8
+Release: 	%mkrel 9
 License: 	MIT
 URL: 		http://sourceforge.net/projects/libungif/
 Source0: 	%{name}-%{version}.tar.bz2
@@ -118,8 +118,7 @@ popd
 
 pushd %{name}-3.1.0
 rm -f configure
-test -x ./autogen.sh && ./autogen.sh
-libtoolize --copy --force
+autoreconf -fis
 %configure2_5x
 %make all
 popd
