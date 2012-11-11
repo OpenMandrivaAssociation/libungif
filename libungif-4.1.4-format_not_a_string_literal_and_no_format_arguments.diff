@@ -1,0 +1,684 @@
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gif2epsn.c libungif-4.1.4.oden/libungif-3.1.0/util/gif2epsn.c
+--- libungif-4.1.4/libungif-3.1.0/util/gif2epsn.c	1998-09-06 21:15:27.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gif2epsn.c	2008-12-18 15:20:39.000000000 +0100
+@@ -140,7 +140,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gif2iris.c libungif-4.1.4.oden/libungif-3.1.0/util/gif2iris.c
+--- libungif-4.1.4/libungif-3.1.0/util/gif2iris.c	1998-09-06 18:07:37.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gif2iris.c	2008-12-18 15:20:39.000000000 +0100
+@@ -105,7 +105,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gif2ps.c libungif-4.1.4.oden/libungif-3.1.0/util/gif2ps.c
+--- libungif-4.1.4/libungif-3.1.0/util/gif2ps.c	1998-09-06 21:15:27.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gif2ps.c	2008-12-18 15:20:39.000000000 +0100
+@@ -123,7 +123,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gif2rgb.c libungif-4.1.4.oden/libungif-3.1.0/util/gif2rgb.c
+--- libungif-4.1.4/libungif-3.1.0/util/gif2rgb.c	1998-09-06 21:15:28.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gif2rgb.c	2008-12-18 15:20:39.000000000 +0100
+@@ -103,7 +103,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gif2rle.c libungif-4.1.4.oden/libungif-3.1.0/util/gif2rle.c
+--- libungif-4.1.4/libungif-3.1.0/util/gif2rle.c	1998-09-06 18:07:38.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gif2rle.c	2008-12-18 15:20:39.000000000 +0100
+@@ -97,7 +97,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gif2x11.c libungif-4.1.4.oden/libungif-3.1.0/util/gif2x11.c
+--- libungif-4.1.4/libungif-3.1.0/util/gif2x11.c	1998-09-06 21:15:28.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gif2x11.c	2008-12-18 15:20:39.000000000 +0100
+@@ -133,7 +133,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifasm.c libungif-4.1.4.oden/libungif-3.1.0/util/gifasm.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifasm.c	1998-09-06 18:07:38.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifasm.c	2008-12-18 15:20:39.000000000 +0100
+@@ -77,7 +77,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifbg.c libungif-4.1.4.oden/libungif-3.1.0/util/gifbg.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifbg.c	1998-09-06 21:15:28.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifbg.c	2008-12-18 15:20:39.000000000 +0100
+@@ -126,7 +126,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifclip.c libungif-4.1.4.oden/libungif-3.1.0/util/gifclip.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifclip.c	1998-09-06 21:15:29.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifclip.c	2008-12-18 15:20:39.000000000 +0100
+@@ -88,7 +88,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifclrmp.c libungif-4.1.4.oden/libungif-3.1.0/util/gifclrmp.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifclrmp.c	1998-09-06 21:15:29.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifclrmp.c	2008-12-18 15:20:39.000000000 +0100
+@@ -107,7 +107,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifcolor.c libungif-4.1.4.oden/libungif-3.1.0/util/gifcolor.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifcolor.c	1998-09-06 21:15:29.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifcolor.c	2008-12-18 15:20:39.000000000 +0100
+@@ -84,7 +84,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifcomb.c libungif-4.1.4.oden/libungif-3.1.0/util/gifcomb.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifcomb.c	1998-09-06 21:15:29.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifcomb.c	2008-12-18 15:20:39.000000000 +0100
+@@ -89,7 +89,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/giffix.c libungif-4.1.4.oden/libungif-3.1.0/util/giffix.c
+--- libungif-4.1.4/libungif-3.1.0/util/giffix.c	1998-09-06 21:15:30.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/giffix.c	2008-12-18 15:20:39.000000000 +0100
+@@ -86,7 +86,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifflip.c libungif-4.1.4.oden/libungif-3.1.0/util/gifflip.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifflip.c	1998-09-06 21:15:30.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifflip.c	2008-12-18 15:20:39.000000000 +0100
+@@ -100,7 +100,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifhisto.c libungif-4.1.4.oden/libungif-3.1.0/util/gifhisto.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifhisto.c	1998-09-06 21:15:30.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifhisto.c	2008-12-18 15:20:39.000000000 +0100
+@@ -108,7 +108,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifinter.c libungif-4.1.4.oden/libungif-3.1.0/util/gifinter.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifinter.c	1998-09-06 21:15:31.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifinter.c	2008-12-18 15:20:41.000000000 +0100
+@@ -94,7 +94,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifinto.c libungif-4.1.4.oden/libungif-3.1.0/util/gifinto.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifinto.c	1998-09-06 18:07:38.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifinto.c	2008-12-18 15:20:41.000000000 +0100
+@@ -86,7 +86,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifovly.c libungif-4.1.4.oden/libungif-3.1.0/util/gifovly.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifovly.c	1998-09-06 18:07:38.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifovly.c	2008-12-18 15:20:41.000000000 +0100
+@@ -67,7 +67,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifpos.c libungif-4.1.4.oden/libungif-3.1.0/util/gifpos.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifpos.c	1998-09-06 18:07:38.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifpos.c	2008-12-18 15:20:41.000000000 +0100
+@@ -86,7 +86,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifrotat.c libungif-4.1.4.oden/libungif-3.1.0/util/gifrotat.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifrotat.c	1998-09-06 21:15:31.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifrotat.c	2008-12-18 15:20:41.000000000 +0100
+@@ -111,7 +111,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifrsize.c libungif-4.1.4.oden/libungif-3.1.0/util/gifrsize.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifrsize.c	1998-09-06 21:15:31.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifrsize.c	2008-12-18 15:20:41.000000000 +0100
+@@ -109,7 +109,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/giftext.c libungif-4.1.4.oden/libungif-3.1.0/util/giftext.c
+--- libungif-4.1.4/libungif-3.1.0/util/giftext.c	1998-09-06 21:15:32.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/giftext.c	2008-12-18 15:20:41.000000000 +0100
+@@ -98,7 +98,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/gifwedge.c libungif-4.1.4.oden/libungif-3.1.0/util/gifwedge.c
+--- libungif-4.1.4/libungif-3.1.0/util/gifwedge.c	1998-09-06 21:15:32.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/gifwedge.c	2008-12-18 15:20:41.000000000 +0100
+@@ -90,7 +90,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/icon2gif.c libungif-4.1.4.oden/libungif-3.1.0/util/icon2gif.c
+--- libungif-4.1.4/libungif-3.1.0/util/icon2gif.c	1998-09-06 21:15:32.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/icon2gif.c	2008-12-18 15:20:41.000000000 +0100
+@@ -87,7 +87,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/raw2gif.c libungif-4.1.4.oden/libungif-3.1.0/util/raw2gif.c
+--- libungif-4.1.4/libungif-3.1.0/util/raw2gif.c	1998-09-06 21:15:32.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/raw2gif.c	2008-12-18 15:20:41.000000000 +0100
+@@ -109,7 +109,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/rgb2gif.c libungif-4.1.4.oden/libungif-3.1.0/util/rgb2gif.c
+--- libungif-4.1.4/libungif-3.1.0/util/rgb2gif.c	1998-09-06 21:15:33.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/rgb2gif.c	2008-12-18 15:20:41.000000000 +0100
+@@ -105,7 +105,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/rle2gif.c libungif-4.1.4.oden/libungif-3.1.0/util/rle2gif.c
+--- libungif-4.1.4/libungif-3.1.0/util/rle2gif.c	1998-09-06 18:07:39.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/rle2gif.c	2008-12-18 15:20:41.000000000 +0100
+@@ -99,7 +99,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/libungif-3.1.0/util/text2gif.c libungif-4.1.4.oden/libungif-3.1.0/util/text2gif.c
+--- libungif-4.1.4/libungif-3.1.0/util/text2gif.c	1998-09-06 21:15:33.000000000 +0200
++++ libungif-4.1.4.oden/libungif-3.1.0/util/text2gif.c	2008-12-18 15:20:41.000000000 +0100
+@@ -103,7 +103,7 @@ void main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(0);
+     }
+diff -Naurp libungif-4.1.4/util/gif2epsn.c libungif-4.1.4.oden/util/gif2epsn.c
+--- libungif-4.1.4/util/gif2epsn.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/gif2epsn.c	2008-12-18 15:21:37.000000000 +0100
+@@ -146,7 +146,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gif2iris.c libungif-4.1.4.oden/util/gif2iris.c
+--- libungif-4.1.4/util/gif2iris.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/gif2iris.c	2008-12-18 15:21:37.000000000 +0100
+@@ -111,7 +111,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gif2ps.c libungif-4.1.4.oden/util/gif2ps.c
+--- libungif-4.1.4/util/gif2ps.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gif2ps.c	2008-12-18 15:21:37.000000000 +0100
+@@ -129,7 +129,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gif2rgb.c libungif-4.1.4.oden/util/gif2rgb.c
+--- libungif-4.1.4/util/gif2rgb.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gif2rgb.c	2008-12-18 15:21:37.000000000 +0100
+@@ -109,7 +109,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gif2rle.c libungif-4.1.4.oden/util/gif2rle.c
+--- libungif-4.1.4/util/gif2rle.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gif2rle.c	2008-12-18 15:21:37.000000000 +0100
+@@ -103,7 +103,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gif2x11.c libungif-4.1.4.oden/util/gif2x11.c
+--- libungif-4.1.4/util/gif2x11.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gif2x11.c	2008-12-18 15:21:37.000000000 +0100
+@@ -142,7 +142,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifasm.c libungif-4.1.4.oden/util/gifasm.c
+--- libungif-4.1.4/util/gifasm.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/gifasm.c	2008-12-18 15:21:37.000000000 +0100
+@@ -98,7 +98,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifbg.c libungif-4.1.4.oden/util/gifbg.c
+--- libungif-4.1.4/util/gifbg.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifbg.c	2008-12-18 15:21:37.000000000 +0100
+@@ -130,7 +130,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifclip.c libungif-4.1.4.oden/util/gifclip.c
+--- libungif-4.1.4/util/gifclip.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/gifclip.c	2008-12-18 15:21:37.000000000 +0100
+@@ -92,7 +92,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifclrmp.c libungif-4.1.4.oden/util/gifclrmp.c
+--- libungif-4.1.4/util/gifclrmp.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifclrmp.c	2008-12-18 15:21:37.000000000 +0100
+@@ -111,7 +111,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifcolor.c libungif-4.1.4.oden/util/gifcolor.c
+--- libungif-4.1.4/util/gifcolor.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/gifcolor.c	2008-12-18 15:21:37.000000000 +0100
+@@ -89,7 +89,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifcomb.c libungif-4.1.4.oden/util/gifcomb.c
+--- libungif-4.1.4/util/gifcomb.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/gifcomb.c	2008-12-18 15:21:37.000000000 +0100
+@@ -93,7 +93,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/giffix.c libungif-4.1.4.oden/util/giffix.c
+--- libungif-4.1.4/util/giffix.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/giffix.c	2008-12-18 15:21:37.000000000 +0100
+@@ -90,7 +90,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifflip.c libungif-4.1.4.oden/util/gifflip.c
+--- libungif-4.1.4/util/gifflip.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifflip.c	2008-12-18 15:21:37.000000000 +0100
+@@ -104,7 +104,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifhisto.c libungif-4.1.4.oden/util/gifhisto.c
+--- libungif-4.1.4/util/gifhisto.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifhisto.c	2008-12-18 15:21:37.000000000 +0100
+@@ -112,7 +112,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifinfo.c libungif-4.1.4.oden/util/gifinfo.c
+--- libungif-4.1.4/util/gifinfo.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifinfo.c	2008-12-18 15:21:37.000000000 +0100
+@@ -104,7 +104,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	printf("Format: quoted text string used for formating of information\n");
+ 	printf("  Special characters for various information can be used\n");
+diff -Naurp libungif-4.1.4/util/gifinter.c libungif-4.1.4.oden/util/gifinter.c
+--- libungif-4.1.4/util/gifinter.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifinter.c	2008-12-18 15:21:37.000000000 +0100
+@@ -98,7 +98,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifinto.c libungif-4.1.4.oden/util/gifinto.c
+--- libungif-4.1.4/util/gifinto.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/gifinto.c	2008-12-18 15:21:37.000000000 +0100
+@@ -96,7 +96,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifovly.c libungif-4.1.4.oden/util/gifovly.c
+--- libungif-4.1.4/util/gifovly.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifovly.c	2008-12-18 15:21:37.000000000 +0100
+@@ -73,7 +73,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifpos.c libungif-4.1.4.oden/util/gifpos.c
+--- libungif-4.1.4/util/gifpos.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifpos.c	2008-12-18 15:21:37.000000000 +0100
+@@ -90,7 +90,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifrotat.c libungif-4.1.4.oden/util/gifrotat.c
+--- libungif-4.1.4/util/gifrotat.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifrotat.c	2008-12-18 15:21:37.000000000 +0100
+@@ -117,7 +117,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifrsize.c libungif-4.1.4.oden/util/gifrsize.c
+--- libungif-4.1.4/util/gifrsize.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifrsize.c	2008-12-18 15:21:37.000000000 +0100
+@@ -113,7 +113,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/giftext.c libungif-4.1.4.oden/util/giftext.c
+--- libungif-4.1.4/util/giftext.c	2008-12-18 15:22:32.000000000 +0100
++++ libungif-4.1.4.oden/util/giftext.c	2008-12-18 15:21:37.000000000 +0100
+@@ -102,7 +102,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/gifwedge.c libungif-4.1.4.oden/util/gifwedge.c
+--- libungif-4.1.4/util/gifwedge.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/gifwedge.c	2008-12-18 15:21:37.000000000 +0100
+@@ -94,7 +94,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/icon2gif.c libungif-4.1.4.oden/util/icon2gif.c
+--- libungif-4.1.4/util/icon2gif.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/icon2gif.c	2008-12-18 15:21:37.000000000 +0100
+@@ -94,7 +94,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/raw2gif.c libungif-4.1.4.oden/util/raw2gif.c
+--- libungif-4.1.4/util/raw2gif.c	2005-10-10 08:08:50.000000000 +0200
++++ libungif-4.1.4.oden/util/raw2gif.c	2008-12-18 15:21:37.000000000 +0100
+@@ -118,7 +118,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/rgb2gif.c libungif-4.1.4.oden/util/rgb2gif.c
+--- libungif-4.1.4/util/rgb2gif.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/rgb2gif.c	2008-12-18 15:21:37.000000000 +0100
+@@ -111,7 +111,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/rle2gif.c libungif-4.1.4.oden/util/rle2gif.c
+--- libungif-4.1.4/util/rle2gif.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/rle2gif.c	2008-12-18 15:21:37.000000000 +0100
+@@ -105,7 +105,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
+diff -Naurp libungif-4.1.4/util/text2gif.c libungif-4.1.4.oden/util/text2gif.c
+--- libungif-4.1.4/util/text2gif.c	2005-10-10 08:08:51.000000000 +0200
++++ libungif-4.1.4.oden/util/text2gif.c	2008-12-18 15:21:37.000000000 +0100
+@@ -107,7 +107,7 @@ int main(int argc, char **argv)
+     }
+ 
+     if (HelpFlag) {
+-	fprintf(stderr, VersionStr);
++	fprintf(stderr, "%s", VersionStr);
+ 	GAPrintHowTo(CtrlStr);
+ 	exit(EXIT_SUCCESS);
+     }
