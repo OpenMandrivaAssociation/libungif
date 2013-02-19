@@ -19,7 +19,6 @@ Patch0:		http://users.own-hero.net/~decoder/fuzzyocr/giftext-segfault.patch
 Patch1:		libungif-4.1.4-format_not_a_string_literal_and_no_format_arguments.diff
 Group: 		System/Libraries
 BuildRequires: 	X11-devel netpbm-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 # The following libgif.so handles packages built against the
 # previous broken giflib package
 Provides: 	libgif.so.4 libgif.so.3 libgif.so libungif.so giflib
@@ -124,8 +123,6 @@ autoreconf -fis
 popd
 
 %install
-rm -rf %buildroot
-
 pushd %{name}-3.1.0/lib
 %makeinstall
 ln -sf libungif.so.3.1.0 %buildroot/%{_libdir}/libgif.so.3.1.0
@@ -145,36 +142,21 @@ chmod 644 %buildroot/%_libdir/*.a*
 chmod 644 COPYING README UNCOMPRESSED_GIF NEWS ONEWS
 chmod 644 doc/* util/giffiltr.c util/gifspnge.c
 
-%clean
-rm -rf %buildroot
-
-%if %mdkversion < 200900
-%post -n %libname   -p /sbin/ldconfig
-%endif
-%if %mdkversion < 200900
-%postun -n %libname -p /sbin/ldconfig
-%endif
-
 %files -n %libname
-%defattr(-,root,root)
 %doc COPYING README UNCOMPRESSED_GIF NEWS ONEWS
 %{_libdir}/lib*.so.*
 
 %files -n %libname-devel
-%defattr(-,root,root)
 %doc doc/*  util/giffiltr.c util/gifspnge.c
 %{_libdir}/lib*.so
 %{_includedir}/*.h
-%{_libdir}/lib*.la
 
 %files -n %libname-static-devel
-%defattr(-,root,root)
 %doc COPYING
 %{_libdir}/lib*.a
 
 
 %files progs
-%defattr(-,root,root)
 %{_bindir}/*
 %doc doc UNCOMPRESSED_GIF COPYING
 
