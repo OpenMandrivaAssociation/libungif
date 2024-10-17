@@ -10,7 +10,7 @@ Summary: 	A library for manipulating GIF format image files
 Version: 	%{version}
 Release: 	%mkrel 9
 License: 	MIT
-URL: 		http://sourceforge.net/projects/libungif/
+URL: 		https://sourceforge.net/projects/libungif/
 Source0: 	%{name}-%{version}.tar.bz2
 Source1: 	%{name}-3.1.0.tar.bz2
 # from https://secure.renaissoft.com/maia/wiki/FuzzyOCR23
