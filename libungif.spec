@@ -18,6 +18,11 @@ Source1: 	%{name}-3.1.0.tar.bz2
 Patch0:		http://users.own-hero.net/~decoder/fuzzyocr/giftext-segfault.patch
 Patch1:		libungif-4.1.4-format_not_a_string_literal_and_no_format_arguments.diff
 Group: 		System/Libraries
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: 	X11-devel netpbm-devel
 # The following libgif.so handles packages built against the
 # previous broken giflib package
