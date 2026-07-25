@@ -8,7 +8,7 @@
 Name: 		%{name}
 Summary: 	A library for manipulating GIF format image files
 Version: 	%{version}
-Release: 	%mkrel 9
+Release: 	10
 License: 	MIT
 URL: 		https://sourceforge.net/projects/libungif/
 Source0: 	%{name}-%{version}.tar.bz2
